@@ -1,7 +1,7 @@
 import React from 'react';
 import profileImage from '../../../resources/JoeGuckian.jpg';
 import Navitem from './Navitem';
-import {Navbar} from 'react-bootstrap'
+import {Navbar} from 'react-bootstrap';
 
 const Sidebar = (props) => {
     const {sections} = props;
@@ -13,8 +13,8 @@ const Sidebar = (props) => {
                     <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={profileImage} alt="profileImage" data-testid="profileImage" />
                 </span>
             </a>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="navbar" />
+            <Navbar.Collapse id="navbar">
                 <ul className="navbar-nav">
                     <Navitem title="About" identifier="about" />
                     {sections.map((section, i) => (
