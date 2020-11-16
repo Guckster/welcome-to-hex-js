@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const data = require("../data/data.js");
 
 const home = Router();
 
